@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Giai pt bac 1</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		h3 {
+			background-color: blue;
+			color: white;
+		}
+		.row {
+			background-color: green;
+			color: white;
+			border-radius: 15px;
+		}
+	</style>
+</head>
+<body>
+	<h3>Giai phuong trinh bac 1</h3>
+			
+		<button onclick="click_1()" class="row">Nhập Giá Trị A</button>
+		<button onclick="click_2()" class="row">Nhập Giá Trị B</button>
+		<button onclick="click_3()" class="row">In Kết Quả</button>
+    
+   <script type="text/javascript">
+		var a, b
+		function click_1(){
+			a = prompt('Nhập giá trị a') 
+		}
+		function click_2(){
+			b = prompt('Nhập giá trị b')
+		}
+		function click_3(){
+			num = a + b;
+			alert("Tổng của a và b là "+num)
+	}
+</script>
+
+</body>
+</html>

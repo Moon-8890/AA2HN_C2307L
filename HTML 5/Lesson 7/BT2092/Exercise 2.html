@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Giải phương trình bậc 1</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		.container
+		{
+			background-color: #ffffcc;
+			padding-left: 50px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		input
+		{
+			outline: none;
+			height: 25px;
+		}
+		select
+		{
+			outline: none;
+		}
+		button
+		{
+			outline: none;
+			background-color: #cccccc;
+		}
+		.Top
+		{
+			display: flex;
+			margin-bottom: 10px;
+		}
+		.Bet
+		{
+			display: flex;
+		}
+		body
+		{
+			font-family: arial;
+		}
+		.Right b
+		{
+			color: #0000cc;
+		}
+		.LeftBox p
+		{
+			color: #000066;
+		}
+		.Left img
+		{
+			height: 80px;
+		}
+		.Right
+		{
+			padding-top: 30px;
+			margin-left: 20px;
+		}
+		form
+		{
+			margin-left: 20px;
+			line-height: 39px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="Top">
+			<div class="Left">
+				<img src="regis.png">
+			</div>
+			<div class="Right">
+				<b>Phiếu mượn sách</b>
+			</div>
+		</div>
+		<div class="Bet">
+			<div class="LeftBox">
+				<p>Mã sinh viên</p>
+				<p>Họ và tên</p>
+				<p>Loại sách</p>
+				<p>Tên sách</p>
+				<p>Ngày mượn</p>
+				<p>Ngày trả</p>
+			</div>
+			<div class="RightBox"> 
+				<form method="post">
+					<input type="text" name="SVCode">
+					<br>
+					<input type="text" name="Name">
+					<br>
+					<select>
+						<option>-- Chọn loại sách --</option>
+						<option>Loại I</option>
+						<option>Loại II</option>
+					</select>
+					<br>
+					<input type="text" name="BookName">
+					<br>
+					<input type="text" name="DayOut">
+					<br>
+					<input type="text" name="DayBack">
+					<br>
+					<br>
+					<button>
+						<img src="log_in.png">
+						Đăng Ký
+					</button>
+					<button>
+						<img src="cancel.png">
+						Nhập lại
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>	

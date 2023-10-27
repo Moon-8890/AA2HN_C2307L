@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Email_Editor.css">
+    <title>Email Editor</title>
+</head>
+<body>
+    <div class="form-container" id="main">
+        <div class="form-header">
+            <h1>Compose e-mail message.</h1>
+            <a href="#help" id="help-btn">Help</a>
+        </div>
+        <form class="form-body" action="Status.html">
+            <div class="form-element" id="send-to">
+                <label for="receiver">To:</label>
+                <input class="form-input" type="email" name="receiver" required>
+            </div>
+            <div class="form-element" id="sender">
+                <label for="sender">From:</label>
+                <input class="form-input" type="email" name="sender" required>
+            </div>
+            <div class="form-element" id="copy-to">
+                <label for="cc">Cc:</label>
+                <input class="form-input" type="email" name="cc">
+            </div>
+            <div class="form-element" id="subject">
+                <label for="subject">Subject:</label>
+                <input class="form-input" type="text" name="subject" required>
+            </div>
+            <div class="form-element" id="message">
+                <label for="message">Message:</label>
+                <div class="form-input"  id="message-content">
+                    <textarea  type="text" name="message" required></textarea>
+                    <div class="scrollbar">
+                        <button class="btn-scroll" id="sroll-up" type="button"></button>
+                        <button class="btn-scroll" id="scroll-down" type="button"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="submit-btn" id="buttons">
+                <button type="submit" id="send">Send</button>
+                <button type="reset" id="cancel">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="help">
+        <h2>-: E-mail Editor Help :-</h2>
+        <h3><img src="https://res.cloudinary.com/wegoup/image/upload/v1607605501/zxc4gpngh7stc8rpjxph.jpg" alt="" class="help-bullets">To and Cc:</h3>
+        <p><b>To</b> and <b>Cc</b> box Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati error labore autem praesentium tenetur repellat, consequatur dolor voluptas nulla doloribus veniam, cupiditate dolorum est aperiam, tempore quos. Ratione, nemo sunt?</p>
+        <h3><img src="https://res.cloudinary.com/wegoup/image/upload/v1607605501/zxc4gpngh7stc8rpjxph.jpg" alt="" class="help-bullets">Subject:</h3>
+        <p>The <b>Subject</b> box Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae labore facere adipisci minima mollitia nesciunt soluta culpa commodi eos maiores?</p>
+        <h3><img src="https://res.cloudinary.com/wegoup/image/upload/v1607605501/zxc4gpngh7stc8rpjxph.jpg" alt="" class="help-bullets">Message:</h3>
+        <p>The <b>Message</b> Textarea Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, explicabo.</p>
+        <div class="close">
+            <a href="#">Close</a>
+        </div>
+    </div>
+</body>
+</html>

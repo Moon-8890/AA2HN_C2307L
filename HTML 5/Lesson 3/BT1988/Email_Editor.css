@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+
+    background-color: rgb(255,255,240);
+
+    padding: 12px 20%;
+}
+
+.form-container{
+    background-color: #DDFFEE;
+
+    padding: 12px 5%;
+}
+.form-header{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 12px 0;
+}
+.form-body{
+    padding: 12px 0;
+}
+.form-element{
+    padding: 6px 0;
+
+    display: flex;
+}
+.form-element label{
+    
+    width: 10%;
+    text-align: right;
+}
+.form-input{
+    width: 90%;
+    margin-left: 1%;
+
+    padding: 6px 1%;
+    background-color: #FFFFDD;
+}
+#message-content{
+    display: flex;
+    position: relative;
+
+    padding: 0;
+}
+#message-content textarea{
+    height: 240px;
+    width: 100%;
+
+    padding: 6px 1%;
+    padding-right: 3%;
+    resize: none;
+    background-color: #FFFFDD;
+
+}
+.scrollbar{
+    position: absolute;
+    right: 0;
+
+    width: 3%;
+    height: 100%;
+    background-color: silver;
+}
+    .btn-scroll{
+        position: absolute;
+
+        background-color: gray;
+        border-color: #C0C0C0;
+        border-width: 3px;
+        width: 100%;
+        height: 10%;
+    }
+        #scroll-up{
+            top: 0;
+        }
+        #scroll-down{
+            bottom: 0;
+        }
+.submit-btn{
+    margin: 12px 12%;
+
+}
+.submit-btn button{
+    padding: 6px 5%;
+}
+
+#help-btn{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    color: blue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+}
+#help-btn:hover{
+    color: red;
+}
+#help{
+    position: absolute;
+    top: 12px;
+
+    width: 60%;
+    height: 90%;
+    background-color: #cfc;
+}
+#help h2, #help h3, #help p{
+    padding: 0 5%;
+}
+#help h2{
+    padding: 12px 2%;
+}
+#help h3{
+    padding-top: 12px;
+}
+#help p{
+    padding-top: 8px;
+}
+.help-bullets{
+    margin-right: 24px;
+}
+.close{
+    margin-top: 24px;
+    padding: 0 5%;
+
+    text-align: right;
+}
+.close a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    cursor: pointer;
+    color: blue;
+}
+.close a:hover{
+    color: red;
+}
+
+
+/* popup + close*/
+#help{
+    visibility: hidden;
+}
+#help:target{
+    visibility: visible;
+}
+
+/* Status page */
+#backtohome{
+    width: 100%;
+    text-align: right;
+}
+#backtohome a{
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+#backtohome a:hover{
+    color: red;
+}

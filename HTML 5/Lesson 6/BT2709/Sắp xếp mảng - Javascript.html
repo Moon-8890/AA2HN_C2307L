@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sắp xếp mảng trong Javascript</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<script type="text/javascript">
+	var N = prompt('Nhap N', 0)
+	N = parseInt(N) //Chuyen N -> sang kieu so nguyen
+
+	var t = []
+	for (var i = 0; i < N; i++) {
+		let value = prompt(`Nhap t[${i}]`, 0)
+		// let value = prompt('Nhap t['+i+']', 0)
+		t.push(parseInt(value))
+	}
+
+	//mac dinh -> hieu la String
+	// t.sort()
+	//fix duoc vs sap xep so nguyen
+	t.sort(function(a, b) {
+		return a - b;
+	})
+
+	var result = ''
+	for (var i = 0; i < t.length; i++) {
+		result += `${t[i]}\n`
+	}
+	alert(result)
+
+	var sum = 0
+	for (var i = 0; i < t.length; i++) {
+		sum += t[i]
+	}
+
+	alert('Tong: ' + sum)
+</script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hoc Excel Online</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="BT2210.css">
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<div class="logo">
+				<div class="align-center">
+					<img src="https://news.iium.edu.my/wp-content/uploads/2018/10/D80FC082-E98D-46B1-A223-1A54EE459BB3.png">
+				</div>
+			</div>
+			<div class="menu">
+				<div class="align-center">
+					<ul>
+						<li><a href="TrangChu.html">Trang Chu</a></li>
+						<li>Series Bai Viet</li>
+						<li>Tai Nguyen</li>
+						<li>Khoa Hoc</li>
+						<li><a href="DangKyTaiKhoan.html">Dang Ky Tai Khoan</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="main">
+			<div class="align-center">
+			<div class="col-8">
+				<h3>NHAP THONG TIN NGUOI DUNG</h3>
+				<form method="post" onsubmit="return registerUser();">
+					<div class="form-group">
+						<label>User Name:</label>
+						<input pattern="[a-zA-Z0-9]{3,25}" required="true" type="text" name="username" id="uname">
+					</div>
+					<div class="form-group">
+						<label>Full Name:</label>
+						<input required="true" type="text" name="fullname" id="fname">
+					</div>
+					<div class="form-group">
+						<label>Password:</label>
+						<input minlength="6" required="true" type="password" name="password" id="pwd">
+					</div>
+					<div class="form-group">
+						<label>Confirm Password:</label>
+						<input minlength="6" required="true" type="password" name="confirm-password" id="pwdConfirm">
+					</div>
+					<div class="form-group">
+						<label>Email:</label>
+						<input required="true" type="email" name="email" id="email">
+					</div>
+					<div class="form-group">
+						<label></label>
+						<button type="submit">Submit</button>
+						<button type="reset">Reset</button>
+					</div>
+				</form>
+			</div>
+			<div class="col-4">
+				<input type="text" class="search" name="s" placeholder="Tim kiem...">
+				<h3>BAI VIET XEM NHIEU NHAT</h3>
+				<div class="item">
+					<div class="col-4">
+						<img src="https://i.pinimg.com/originals/2d/0f/50/2d0f50e8e4f6b233c7cf70b4bd36f89c.png" style="width: 100%">
+					</div>
+					<div class="col-8">
+						Hai ca bệnh này từ Hoa Kỳ quá cảnh Hàn Quốc, sau đó nhập cảnh sân bay Tân Sơn Nhất ngày 10-3
+					</div>
+				</div>
+				<div class="item">
+					<div class="col-4">
+						<img src="https://i.pinimg.com/originals/2d/0f/50/2d0f50e8e4f6b233c7cf70b4bd36f89c.png" style="width: 100%">
+					</div>
+					<div class="col-8">
+						Hai ca bệnh này từ Hoa Kỳ quá cảnh Hàn Quốc, sau đó nhập cảnh sân bay Tân Sơn Nhất ngày 10-3
+					</div>
+				</div>
+				<div class="item">
+					<div class="col-4">
+						<img src="https://i.pinimg.com/originals/2d/0f/50/2d0f50e8e4f6b233c7cf70b4bd36f89c.png" style="width: 100%">
+					</div>
+					<div class="col-8">
+						Hai ca bệnh này từ Hoa Kỳ quá cảnh Hàn Quốc, sau đó nhập cảnh sân bay Tân Sơn Nhất ngày 10-3
+					</div>
+				</div>
+				<div class="item">
+					<div class="col-4">
+						<img src="https://i.pinimg.com/originals/2d/0f/50/2d0f50e8e4f6b233c7cf70b4bd36f89c.png" style="width: 100%">
+					</div>
+					<div class="col-8">
+						Hai ca bệnh này từ Hoa Kỳ quá cảnh Hàn Quốc, sau đó nhập cảnh sân bay Tân Sơn Nhất ngày 10-3
+					</div>
+				</div>
+				<div class="item">
+					<div class="col-4">
+						<img src="https://i.pinimg.com/originals/2d/0f/50/2d0f50e8e4f6b233c7cf70b4bd36f89c.png" style="width: 100%">
+					</div>
+					<div class="col-8">
+						Hai ca bệnh này từ Hoa Kỳ quá cảnh Hàn Quốc, sau đó nhập cảnh sân bay Tân Sơn Nhất ngày 10-3
+					</div>
+				</div>
+				<h4>FOLLOW GOKISOFT YOUTUBE CHANNEL</h4>
+				<a href="https://www.youtube.com/channel/UCd8aIzwdaoQ_Abp3frmeZSA?sub_confirmation=1" target="_blank"><img src="http://assets.stickpng.com/images/5eb13e3a74bb7d0004ae6195.png" style="width: 100%"></a>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<script type="text/javascript">
+		function registerUser() {
+			var pwd = document.getElementById('pwd').value
+			var pwdConfirm = document.getElementById('pwdConfirm').value
+
+			if(pwd == pwdConfirm){
+				//register success
+				alert('Dang ky tai khoan thanh cong!!!')
+				return true
+			}
+
+			alert('Dang ky that bai!!!')
+			return false;
+		}
+	</script>
+</body>
+</html>
