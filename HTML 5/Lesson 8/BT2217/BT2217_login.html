@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="BT2217.css">
+    <title>Document</title>
+</head>
+<body>
+    <script src="BT2217.js"></script>
+    <div class="container">
+        <div class="head">
+            <div class="title">
+                <div class="logo">
+                    <h1>logo</h1>
+                </div>
+                <div class="name">
+                    <h1>web tin tức</h1>
+                </div>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="">Trang chủ</a></li>
+                    <li><a href="">Tin học</a></li>
+                    <li><a href="">Biểu mẫu</a></li>
+                    <li><a href="">Khoa học</a></li>
+                    <li><a href="">Tuyển dụng</a></li>
+                    <li><a href="">Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="left">
+                <h1>nhập thông tin bài viết</h1>
+                <form action="" id="myform" onsubmit="return Save()">
+                    <div class="form-group">
+                        <label for="">tiêu đề</label><br>
+                        <input type="text" required="true" id="tieude" maxlength="200" minlength="10">
+                    </div>
+                    <div class="form-group">
+                        <label for="">hình ảnh</label><br>
+                        <input type="text" id="img">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Nội dung</label><br>
+                        <input type="text" required="true" id="content" maxlength="500" minlength="20">
+                    </div>
+                    <div class="btn">
+                        <button type="submit" id="save" onclick="Save()">Lưu</button>
+                        <button id="delete" onclick="Reset()">Xóa</button>
+                    </div>
+                </form>
+            </div>
+            <div class="right">
+                <h1>bài viết mới nhất</h1>
+                <ul>
+                    <li>Bài 1</li>
+                    <li>Bài 2</li>
+                    <li>Bài 3</li>
+                    <li>Bài 4</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

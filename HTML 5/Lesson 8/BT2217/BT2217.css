@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 900px;
+    margin: 0px auto;
+}
+.container .head .title{
+    display: flex;
+}
+.title .logo{
+    width: 110px;
+    background-color: red;
+    text-align: center;
+}
+.logo h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.title .name{
+    width: 790px;
+    margin-left: 20px;
+    text-align: center;
+}
+.name h1{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.nav ul{
+    display: flex;
+    background-color: #51adc8;
+}
+.nav ul li{
+    padding: 10px 20px;
+    border-right: 1px solid #fff;
+}
+li a{
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+}
+.main{
+    display: flex;
+    width: 900px;
+}
+.main .left{
+    width: 700px;
+    display: block;
+}
+.left h1{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.left p{
+    font-size: 20px;
+}
+.left .form-group{
+    display: block;
+}
+.form-group label{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.form-group input{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 50%;
+    outline: none;
+    border: 2px solid black;
+}
+.form-group #tieude,#img{
+    padding: 15px;
+}
+.form-group #content{
+   height: 100px;
+}
+button{
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: none;
+}
+#save{
+    background-color: orange;
+}
+#delete{
+    background-color: #ff0000c7;
+}
+
+.main .right{
+    width: 200px;
+    height: 300px;
+    border: 5px solid black;
+    padding: 1px 5px;
+}
+.right h1{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.right ul{
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: -25px;
+}
